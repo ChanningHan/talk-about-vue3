@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
-import BenchMark from "@/views/Benchmark.vue"
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -17,20 +16,10 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path:"/benchmark",
-    name:'Benchmark',
-    component:BenchMark
-  },
-  {
-    path:"/benchmark3",
-    name:'Benchmark3',
-    component:()=>import("@/views/Benchmark3.vue")
-  },
-  {
-    path:"/mouse",
-    name:'Mouse',
+    path: "/mouse",
+    name: 'Mouse',
     /*Mixins*/
-    // component:()=>import("@/views/Mouse/Mouse.vue")
+    component: () => import("@/views/Mouse/Mouse.vue")
 
     /*HOC*/
     // component:()=>import("@/components/Mouse/MouseHOC.vue")
@@ -39,27 +28,27 @@ export const routes: Array<RouteRecordRaw> = [
     // component:()=>import("@/views/Mouse/Mouse3.vue")
 
     /*Composition*/
-    component:()=>import("@/views/Mouse/Mouse4.vue")
+    // component: () => import("@/views/Mouse/Mouse4.vue")
   },
   {
-    path:"/todoMVC",
-    name:'TodoMVC',
-    component:()=>import("@/views/TodoMVC/TodoMVC.vue")
+    path: "/todoMVC",
+    name: 'TodoMVC',
+    component: () => import("@/views/TodoMVC/TodoMVC.vue")
   },
   {
-    path:"/fragment",
-    name:'Fragment',
-    component:()=>import("@/views/Fragment.vue")
+    path: "/fragment",
+    name: 'Fragment',
+    component: () => import("@/views/Fragment.vue")
   },
   {
-    path:"/suspense",
-    name:'Suspense',
-    component:()=>import("@/views/Suspense.vue")
+    path: "/suspense",
+    name: 'Suspense',
+    component: () => import("@/views/Suspense.vue")
   },
   {
-    path:"/teleport",
-    name:'Teleport',
-    component:()=>import("@/views/Teleport.vue")
+    path: "/teleport",
+    name: 'Teleport',
+    component: () => import("@/views/Teleport.vue")
   }
 ]
 

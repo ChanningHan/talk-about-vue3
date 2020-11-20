@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import {defineComponent, ref} from "vue"
-import TeleportModal from "@/components/TeleportModal"
+import TeleportModal from "@/components/TeleportModal.vue"
 
 export default defineComponent({
   components: {

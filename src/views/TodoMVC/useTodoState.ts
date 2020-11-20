@@ -1,10 +1,10 @@
-import {Todo, Visibility} from "@/Types/TodoMVC";
-import {ref, reactive, watchEffect,} from "vue"
+import { Todo, Visibility } from "@/Types/TodoMVC";
+import { ref, watchEffect, } from "vue"
 import useTodoStorage from "@/views/TodoMVC/useTodoStorage";
 
 export default function useTodoState() {
 
-    const {fetch, save, uid} = useTodoStorage()
+    const { fetch, save, uid } = useTodoStorage()
 
     const todos = ref(fetch())
     const newTodo = ref("")
