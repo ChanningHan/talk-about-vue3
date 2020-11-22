@@ -16,7 +16,6 @@ export default defineComponent({
   },
   setup() {
     const isOpen = ref(false)
-
     const handleToggle = () => {
       isOpen.value = !isOpen.value
     }
@@ -27,8 +26,6 @@ export default defineComponent({
     }
   }
 })
-
-
 </script>
 
 <style lang="scss" scoped>

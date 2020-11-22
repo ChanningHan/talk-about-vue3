@@ -79,6 +79,7 @@ export default defineComponent({
   setup() {
 
 
+    /*响应式变量、新增和删除代办事项的方法*/
     const {
       todos,
       newTodo,
@@ -87,8 +88,7 @@ export default defineComponent({
       removeTodo
     } = useTodoState()
 
-
-    // 筛选数据
+    // 筛选数据、一键全部完成/未完成、清空全部已完成事项
     const {
       filteredTodos,
       remaining,
@@ -116,7 +116,6 @@ export default defineComponent({
   },
 
 })
-
 
 </script>
 

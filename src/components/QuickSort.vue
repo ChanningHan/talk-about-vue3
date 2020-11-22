@@ -23,7 +23,6 @@ export default defineComponent({
       })
     }, 100)
 
-
     return {
       flag,
       left,

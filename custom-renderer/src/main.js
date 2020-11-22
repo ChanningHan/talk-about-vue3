@@ -1,4 +1,4 @@
-import {createApp} from './renderer';
+import { customCreateApp } from './renderer';
 import App from "./App.vue";
 
-createApp(App).mount("#app")
+customCreateApp(App).mount("#app")

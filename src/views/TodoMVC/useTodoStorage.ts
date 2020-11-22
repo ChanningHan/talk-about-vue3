@@ -15,17 +15,14 @@ export default function useTodoStorage() {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(todos))
     }
 
+    // 用于新增代办事项的id自动生成
     const uid = ref(~~(localStorage.getItem('uid') || 0));
-    watchEffect(() => {
-        localStorage.setItem('uid', uid.value.toString())
-    })
-
+    watchEffect(() => localStorage.setItem('uid', uid.value.toString()))
 
     return {
         fetch,
         save,
         uid
     }
-
 
 }
